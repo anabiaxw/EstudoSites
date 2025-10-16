@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>principais plataformas ESTUDOS</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      overflow-x: hidden; /* impede rolagem lateral */
+      width: 100%;
+      font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif; /* mais fofo */
+      background: #ffe6f0; /* rosa claro Hello Kitty */
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      color: #ff66b2; /* rosa vibrante */
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: 100%;
+    }
+
+    /* Container dos cards */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Cards */
+    .card {
+      display: block;
+      background: #fff0f6; /* rosa bem clarinho */
+      padding: 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #ff3399; /* rosa Hello Kitty */
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255,102,178,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .card::before {
+      content: "🎀"; /* lacinho Hello Kitty */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(255,102,178,0.5);
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .card {
+        padding: 16px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>principais plataformas<br>ESTUDOS</h1>
+  </header>
+
+  <main class="container">
+    <a href="https://app.portalsaseducacao.com.br/painel/" target="_blank" class="card">SAS Educação</a>
+    <a href="https://www.redacaonota1000.com.br/redacao/lista" target="_blank" class="card">Redação Nota 1000</a>
+    <a href="https://www.mesalva.com/simulador-sisu#simulador" target="_blank" class="card">Simulador SISU</a>
+    <a href="https://enem.inep.gov.br/participante/#!/participante/mensagens" target="_blank" class="card">INEP Participante</a>
+    <a href="https://sisualuno.mec.gov.br/#/login" target="_blank" class="card">SISU 2026</a>
+  </main>
+</body>
+</html>
+
